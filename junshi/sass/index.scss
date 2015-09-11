@@ -1,0 +1,452 @@
+*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;}
+
+@import "compass/css3";
+
+html {
+	width:100%;
+	height:100%;
+}
+
+body {
+	max-width:640px;
+	width:100%;
+	height:100%;
+	font-family:"Microsoft Yahei";
+	overflow:hidden;
+}
+.container {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.home-page {
+	width:100%;
+	height:100%;
+	img {
+		position:absolute;
+		z-index:1;
+		width:100%;
+		height:100%;
+	}
+	#homeBtn {
+		position:absolute;
+		z-index:5;
+		bottom:6.6%;
+		left:37%;
+		width:30px;
+		height:30px;
+		border:2px solid red;
+		@include border-radius(30px);
+	}
+}
+
+
+.page1 {
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	display:none;
+	.backs {
+		position:absolute;
+		z-index:1;
+	}
+	.icons {
+		width:100%;
+		height:100%;
+		position:absolute;
+		left:15%;
+		@include transition(.5s);
+		z-index:5;
+		.years {
+			width:100%;
+			position:absolute;
+			z-index:2;
+		}
+		
+		.circles {
+			position:relative;
+			width:100%;
+			height:100%;
+			.cir1,.cir2,.cir3,.cir4,.cir5,.cir6,.cir7 {
+				position:relative;
+				width:100%;
+				height:5%;
+				margin-top:48%;
+				
+				a {
+					position:absolute;
+					z-index:15;
+					// background:red;
+					width:8%;
+					height:80%;
+					@include border-radius(50%);
+				}
+				.cir-cont {
+					width:100%;
+					position:absolute;
+					// top:0;
+					// left:0;
+					img {
+						display:block;
+						width:25%;
+					}
+					img:nth-child(1) {
+						visibility:hidden;
+					}
+				}
+			}
+
+			.cir1 {
+				margin-top:0;
+				a {
+					left:60.5%;
+					top:55%;
+				}
+				.cir-cont {
+					left:30%;
+				}
+				
+			}
+			.cir2 {
+				margin-top:54%;
+				a {
+					left:31%;
+					top:65%;
+				}
+				.cir-cont {
+					left:40%;
+				}
+			}
+			.cir3 {
+				a {
+					left:60.5%;
+					top:70%;
+				}
+				.cir-cont {
+					left:30%;
+				}
+				
+			}
+			.cir4 {
+				a {
+					left:31%;
+					top:74%;
+				}
+				.cir-cont {
+					left:40%;
+				}
+			}
+			.cir5 {
+				a {
+					left:60.5%;
+					top:80%;
+				}
+				.cir-cont {
+					left:30%;
+				}
+				
+			}
+			.cir6 {
+				a {
+					left:31%;
+					top:84%;
+				}
+				.cir-cont {
+					left:40%;
+				}
+			}
+			.cir7 {
+				margin-top:60%;
+				a {
+					left:60.5%;
+					top:103%;
+				}
+				.cir-cont {
+					left:30%;
+				}
+			}
+			
+		}
+
+		.showBtn {
+			background:red;
+		}
+	}
+	// .contents {
+	// 	width:100%;
+	// 	height:100%;
+	// }
+	.pcont1 {
+		width:100%;
+		height:100%;
+		// display:block;
+	}
+
+	.pcont-2,.pcont-3,.pcont-4,.pcont-5 {
+		width:100%;
+		height:100%;
+		display:none;
+	}
+	
+	.main {
+		// display:none;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		.years-img {
+			position:absolute;
+			z-index:10;
+		}
+		
+		.content {
+			position:absolute;
+			width:45%;
+			top:20%;
+			// left:55%;
+			// right:-5%;
+			z-index:10;
+			p {
+				width:85%;
+				color:#bcb8af;
+				font:bold 28em/1.5em "Microsoft Yahei";
+
+			}
+			.btns {
+				width:100%;
+				a {
+					float:left;
+					width:35%;
+					img {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+
+	.p-left {
+		position:absolute;
+		// left:-100%;
+		@include transform(translate3d(-100%,0,0));
+		z-index:10;
+		width:100%;
+		height:100%;
+		@include transition(.5s);
+		.v-l-back {
+			position:absolute;
+			z-index:1;
+			width:100%;
+			height:100%;
+		}
+		p {
+			font-size:24em;
+		}
+		.l-btn {
+			position:absolute;
+			z-index:2;
+			top:40%;
+			left:58%;
+			img {
+				width:50%;
+			}
+		}
+		.l-content {
+			position:relative;
+			z-index:5;
+			width:60%;
+			height:100%;
+			padding:0 5%;
+			background:#fff;
+			color:#3a302c;
+			overflow-x:visible;
+			overflow-y:auto;
+			
+			.l-img {
+				width:100%;
+			}
+			.l-cont {
+				font:bold 32em "Microsoft Yahei";
+			}
+		}
+	}
+
+	.p-right {
+		position:absolute;
+		// right:-100%;
+		@include transform(translate3d(100%,0,0));
+		@include transition(.5s);
+		z-index:20;
+		width:100%;
+		height:100%;
+		.v-r-back {
+			position:absolute;
+			z-index:1;
+			width:100%;
+			height:100%;
+		}
+		.r-btn {
+			position:absolute;
+			z-index:3;
+			top:40%;
+			left:30%;
+			img {
+				width:50%;
+			}
+		}
+		.r-content {
+			position:absolute;
+			z-index:5;
+			right:0;
+			width:60%;
+			height:100%;
+			padding:0 5%;
+			background:#fff;
+			color:#3a302c;
+			overflow:auto;
+			p {
+				font-size:24em;
+			}
+			.r-img {
+				width:100%;
+			}
+			
+			.r-cont {
+				font:bold 32em "Microsoft Yahei";
+			}
+		}
+	}
+
+	.pAnimate {
+	@include transform(translate3d(0,0,0));
+}
+
+
+
+	.pcont-1,.pcont-3,.pcont-5 {
+		.content {
+			left:6%;
+		}
+		
+	}
+	.pcont-2,.pcont-4 {
+		.content {
+			right:-5%;
+		}
+		
+	}
+}
+
+.last-page {
+	// display:none;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	@include transform(scale(0));
+	transform-origin:100% 100%;
+	.lastCont {
+		width:100%;
+		position:absolute;
+		z-index:5;
+		.header {
+			position:relative;
+			height:5%;
+			a {
+				position:absolute;
+				top:50%;
+				left:50%;
+				z-index:15;
+				// background:red;
+				width:10%;
+				height:50%;
+				// border:1px solid red;
+			}
+			img {
+				width:100%;
+				
+			}
+		}
+		// .content,.footer {
+		// 	padding:10% 15%;
+		// }
+		.content {
+			padding:10% 15%;
+			p {
+				color:#fff;
+				font-size:bold;
+			}
+		}
+		.footer {
+			width:100%;
+			padding:0 15%;
+
+			.f-top {
+				width:100%;
+				font-size:0;
+				.erweima {
+					display:inline-block;
+					width:45%;
+					margin-right:5%;
+					img {
+						width:100%;
+					}
+				}
+				.zhuan {
+					display:inline-block;
+					width:45%;
+					margin-left:5%;
+					a {
+						display:inline-block;
+						width:100%;
+						img {
+							width:100%;
+						}
+					}
+					a:first-child {
+						margin-bottom:30%;
+					}
+				}
+			}
+			.f-bottom {
+				text-align:center;
+				margin-top:60%;
+				p {
+					width:100%;
+					margin-top:10%;
+					color:#fff;
+					span {
+						display:inline-block;
+						width:32%;
+					}
+				}
+			}
+		}
+	}
+	.back-img {
+		position:absolute;
+		z-index:1;
+	}
+	
+}
+
+.page-animate{
+	@include transform(scale(0));
+}
+.page1-animate {
+	@include transform(scale(1));
+}
+
+
+
+.move-1 {
+	@include transform(translate3d(-30%,-30%,0));
+}
+.move-2 {
+	@include transform(translate3d(0,-60%,0));
+}
+.move-3 {
+	@include transform(translate3d(-30%,-90%,0));
+}
+.move-4 {
+	@include transform(translate3d(0%,-120%,0));
+}

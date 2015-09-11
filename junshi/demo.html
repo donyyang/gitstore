@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name = "viewport" content = "width = device-width,initial-scale = 1.0,user-scalable = no">
+	<script src = "js/jquery-2.1.1.min.js"></script>
+	<style>
+		html {
+			width:100%;
+			height:100%;
+		}
+		body {
+			margin:0;
+			padding:0;
+			width:100%;
+			height:100%;
+		}
+		.box {
+			width:100%;
+			height:100%;
+			display: flex;
+			justify-content: colum;
+			-webkit-align-items: space-between;
+		}
+
+		.active{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div class="box">
+		<span class = "item">first</span>
+		<span class = "item">second</span>
+	</div> 	 -->
+	
+	<div class="event">
+		<ul id = "uls">
+			<li index = 1>1</li>
+			<li index = 2>2</li>
+			<li index = 3>3</li>
+			<li index = 4>4</li>
+			<li index = 5>5</li>
+			<li index = 6>6</li>
+		</ul>
+	</div>
+	
+	<ul id="tabs">
+	    <li data-tab="users">Users</li>
+	    <li data-tab="groups">Groups</li>
+	</ul>
+	<div id="tabsContent">
+	    <div data-tab="users">part1</div>
+	    <div data-tab="groups">part2</div>
+	</div>
+	<script>
+		// function Animate(a, b) {
+		// 	console.log(a+b);
+		// }
+
+		// function Cat(a, b) {
+		// 	console.log(a - b);
+		// }
+
+		// Animate.apply(Cat,[4,2]);
+		// Cat.call(Animate,4,2)  /*2*/
+
+		$.fn.demo = function () {
+			var ele = $(this);
+			ele.delegate("li","click",function () {
+				var num = $(this).attr("index");
+				ele.trigger("events",num);
+			})
+
+			ele.bind("events",function (e,num) {
+				ele.find("li").removeClass("active");
+				ele.find(">[index = '"+num+"']").addClass("active");
+			})
+
+			var firstName=ele.find("li:first").attr("index");
+		    ele.trigger("events",firstName);
+
+			return this;
+		}
+
+		$("#uls").demo();
+	</script>
+</body>
+</html>
