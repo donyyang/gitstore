@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name = "viewport" content = "width = device-width,user-scalable = no,initial-scale = 1.0">
+	<meta name = "decription" content = "Document">
+	<meta name = "apple-touch-fullscreen" content = "yes">
+	<meta name = "apple-mobile-web-app-capable" content = "yes">
+	
+	<link rel="stylesheet" href="css/normal.css">
+	<link rel="stylesheet" href="css/swiper.3.1.2.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src = "js/preload.js"></script>
+	<script src = "js/swiper.animate1.0.2.min.js"></script>
+	<script src = "js/jquery-1.10.1.min.js"></script>
+	<script src = "js/swiper.3.1.2.jquery.min.js"></script>
+
+	<script src = "js/mobile.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+		html,body {
+			max-width:640px;
+			height:100%;
+		}
+		.swiper-container,.swiper-wrapper,.swiper-slider,.page {
+			width:100%;
+			height:100%;
+		}
+		body {
+			font-size:"microsoft yahei";
+		}
+		img {
+			position:absolute;
+			width:100%;
+		}
+		.logo {
+			z-index:5;
+		}
+		.common-img {
+			z-index:5;
+		}
+
+		/*音乐图标*/
+		.musicBtn {
+			position:absolute;
+			width:35px;
+			height:35px;
+			right:10px;
+			top:10px;
+			z-index:999;
+		}
+		
+		.swiper-button-prev,.swiper-button-next {
+			width:10%;
+			height:8%;
+			top:80%;
+			color:#767b81;
+			background-image:none;
+		}
+
+		
+		.cont {
+			position:absolute;
+			z-index:10;
+			top:75%;
+			padding:0 10%;
+			transform:scale(0);
+			-webkit-transform:scale(0);
+			-moz-transform:scale(0);
+			font:normal 24em/1.5em "microsoft yahei";
+			color:#e3e6e9;
+		}
+		/*设置圆的位置*/
+		 .move {
+			top:75.8%;
+			right:3%;
+		}
+
+		.fengmian1{
+			top:15%;
+		}
+		/*最后一屏*/
+		 .cont80 {
+			top:7%;
+		}
+		 .cont81 {
+			top:20%;
+		}
+		 #relay {
+			position:absolute;
+			width:100%;
+			top:32%;
+			height:7%;
+		}
+		 #share {
+			position:absolute;
+			width:100%;
+			top:41%;
+			height:7%;
+		}
+		 #mark {
+		 	position:absolute;
+			display:none;
+		}
+		.swiper-slide-active  .cont84 {
+			top:49.5%;
+			transform:scale(0);
+			-webkit-transform:scale(0);
+			-moz-transform:scale(0);
+			animation:cont1 1s ease-out 1.2s forwards;
+			-webkit-animation:cont1 1s ease-out 1.2s forwards;
+			-moz-animation:cont1 1s ease-out 1.2s forwards;
+
+		}
+
+		 .cont85 {
+			top:75%;
+		}
+		 .other {
+			width:100%;
+			position:absolute;
+			top:88%;
+			text-align:center;
+			color:#d8dcdf;
+			font-size:24em;
+		}
+		
+
+		/*从小到大的动画*/
+		.swiper-slide-active .scale {
+			animation:cont1 1s ease-out .5s forwards;
+			-webkit-animation:cont1 1s ease-out .5s forwards;
+			-moz-animation:cont1 1s ease-out .5s forwards;
+		}
+		 @keyframes cont1 {
+			from {transform:scale(0);}
+			to {transform:scale(1);}
+		 }
+		
+		@-webkit-keyframes cont1 {
+			from {transform:scale(0);}
+			to {transform:scale(1);}
+		 }
+		 @-moz-keyframes cont1 {
+			from {transform:scale(0);}
+			to {transform:scale(1);}
+		 }
+
+	</style>
+</head>
+<body>
+
+	<div class="loading">
+		<div class="pace">
+			<div class="pace-progress">0</div>
+		</div>
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+		</div>
+	</div>
+	
+	<script src = "js/data.js"></script>
+	
+</body>
+</html> 

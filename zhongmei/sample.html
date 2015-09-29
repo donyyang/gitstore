@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name = "viewport" content = "width= device-width,user-scalable = no,initial-scale = 1.0">
+<title>Document</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<script src="js/swiper.min.js"></script>
+<script src = "js/swiper.animate1.0.2.min.js"></script>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	max-width:640px;
+	height:100%;
+	background:#ebf3f8;
+}
+.swiper-container {
+	max-width:640px;
+	width:100%;
+	height:100%;
+}
+.swiper-slide {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+img {
+	width:100%;
+	position:absolute
+}
+
+/*第一屏*/
+.page01 .cont01 {
+	z-index:8;
+	top:10%;
+}
+.page01 .cont02 {
+	z-index:9;
+	left:-5%;
+	top:20%;
+}
+.swiper-slide-active .page01 .cont03 {
+	z-index:10;
+	left:-5%;
+	top:43%;
+}
+/*待定1*/
+/*.swiper-slide-active .page01 .cont04 {
+	z-index:10;
+	bottom:23%;
+	height:0;
+	animation:cont04 1.2s 1s ease-out forwards;
+}
+
+@keyframes cont04 {
+	from {height:0;}
+	to {height:18%;}
+ }*/
+
+.swiper-slide-active .page01 .cont05 {
+	opacity:0;
+	animation:cont05 1s 1.5s ease-out forwards;
+	-webkit-animation:cont05 1s 1.5s ease-out forwards;
+}
+.swiper-slide-active .page01 .cont06 {
+	opacity:0;
+	animation:cont06 .8s 2s ease-out forwards;
+	-webkit-animation:cont06 .8s 2s ease-out forwards;
+}
+.swiper-slide-active .page01 .cont07 {
+	opacity:0;
+	animation:cont07 .5s 2.5s ease-out forwards;
+	-webkit-animation:cont07 .5s 2.5s ease-out forwards;
+}
+.swiper-slide-active .page01 .cont08 {
+	opacity:0;
+	animation:cont08 .4s 2.8s ease-out forwards;
+	-webkit-animation:cont08 .4s 2.8s ease-out forwards;
+}
+@keyframes cont05 {
+	from {top:80%;opacity:0;}
+	to {top:62%;opacity:1;}
+ }
+ @-webkit-keyframes cont05 {
+	from {top:80%;opacity:0;}
+	to {top:62%;opacity:1;}
+ }
+ @-moz-keyframes cont05 {
+	from {top:80%;opacity:0;}
+	to {top:62%;opacity:1;}
+ }
+
+ @keyframes cont06 {
+	from {top:80%;opacity:0;}
+	to {top:66%;opacity:1;}
+ }
+ @-webkit-keyframes cont06 {
+	from {top:80%;opacity:0;}
+	to {top:66%;opacity:1;}
+ }
+ @-moz-keyframes cont06 {
+	from {top:80%;opacity:0;}
+	to {top:66%;opacity:1;}
+ }
+
+ @keyframes cont07 {
+	from {top:80%;opacity:0;}
+	to {top:69.5%;opacity:1;}
+ }
+ @-webkit-keyframes cont07 {
+	from {top:80%;opacity:0;}
+	to {top:69.5%;opacity:1;}
+ }
+ @-moz-keyframes cont07 {
+	from {top:80%;opacity:0;}
+	to {top:69.5%;opacity:1;}
+ }
+ @keyframes cont08 {
+	from {top:80%;opacity:0;}
+	to {top:73.5%;opacity:1;}
+ }
+ @-webkit-keyframes cont08 {
+	from {top:80%;opacity:0;}
+	to {top:73.5%;opacity:1;}
+ }
+ @-moz-keyframes cont08 {
+	from {top:80%;opacity:0;}
+	to {top:73.5%;opacity:1;}
+ }
+
+/*第二屏*/
+.page02 .cont20 {
+	top:4%;
+}
+.swiper-slide-active .page02 .cont23 {
+	top:35%;
+	opacity:0;
+	z-index:5;
+	animation:cont23 .8s .7s ease-out forwards;
+	-webkit-animation:cont23 .8s .7s ease-out forwards;
+}
+.swiper-slide-active .page02 .cont27 {
+	top:35%;
+	z-index:5;
+	opacity:0;
+	animation:cont27 .8s .7s ease-out forwards;
+	-webkit-animation:cont27 .8s .7s ease-out forwards;
+}
+.page02 .cont24 {
+	top:19%;
+}
+.page02 .cont25 {
+	top:59%;
+}
+.page02 .cont21 {
+	top:41%;
+}
+.page02 .cont22 {
+	top:81.5%;
+}
+ @keyframes cont23 {
+	from {top:35%;opacity:0;}
+	to {top:13%;opacity:1;}
+ }
+ @-webkit-keyframes cont23 {
+	from {top:35%;opacity:0;}
+	to {top:13%;opacity:1;}
+ }
+ @-moz-keyframes cont23 {
+	from {top:35%;opacity:0;}
+	to {top:13%;opacity:1;}
+ }
+
+ @keyframes cont27 {
+	from {top:35%;opacity:0;}
+	to {top:53%;opacity:1;}
+ }
+ @-webkit-keyframes cont27 {
+	from {top:35%;opacity:0;}
+	to {top:53%;opacity:1;}
+ }
+ @-moz-keyframes cont27 {
+	from {top:35%;opacity:0;}
+	to {top:53%;opacity:1;}
+ }
+
+ /*第三屏*/
+.page03 .cont30 {
+	top:4%;
+}
+
+.page03 .cont31 {
+	top:15%;
+}
+
+.page03 .cont32 {
+	top:28%;
+}
+.page03 .cont33 {
+	top:52%;
+}
+.swiper-slide-active .page03 .cont34 {
+	top:28.2%;
+	transform:scale(0);
+	transform-origin:0;
+	animation:cont34 1s 2.7s ease-out forwards;
+	-webkit-animation:cont34 1s 2.7s ease-out forwards;
+}
+.swiper-slide-active .page03 .cont35 {
+	top:52.8%;
+	transform:scale(0);
+	transform-origin:0;
+	animation:cont35 1s 2.7s ease-out forwards;
+	-webkit-animation:cont35 1s 2.7s ease-out forwards;
+}
+.page03 .cont36 {
+	top:21%;
+}
+.page03 .cont37 {
+	top:45%;
+}
+.page03 .cont38 {
+	top:66%;
+}
+.page03 .cont39 {
+	top:67%;
+}
+.page03 .cont301 {
+	top:69%;
+}
+.page03 .cont302 {
+	top:69%;
+}
+@keyframes cont34 {
+	from {transform:scale(0);}
+	to {transform:scale(1);}
+ }
+ @-webkit-keyframes cont34 {
+	from {-webkit-transform:scale(0);}
+	to {-webkit-transform:scale(1);}
+ }
+ @-moz-keyframes cont34 {
+	from {-moz-transform:scale(0);}
+	to {-moz-transform:scale(1);}
+ }
+ @keyframes cont35 {
+	from {transform:scale(0);}
+	to {transform:scale(1);}
+ }
+@-webkit-keyframes cont35 {
+	from {-webkit-transform:scale(0);}
+	to {-webkit-transform:scale(1);}
+ }
+ @-moz-keyframes cont35 {
+	from {-moz-transform:scale(0);}
+	to {-moz-transform:scale(1);}
+ }
+ /*第四屏*/
+.page04 .cont40 {
+	top:4%;
+}
+.page04 .cont41 {
+	top:18%;
+	z-index:5;
+}
+.page04 .cont42 {
+	top:15%;
+	z-index:5;
+}
+.swiper-slide-active .page04 .cont43 {
+	opacity:0;
+	top:100%;
+	animation:cont43 .8s 1s ease-out forwards;
+	-webkit-animation:cont43 .8s 1s ease-out forwards;
+}
+.swiper-slide-active .page04 .cont47 {
+	top:36%;
+	transform:scale(0);
+	-webkit-transform-origin:0;
+	transform-origin:0;
+	animation:cont47 .8s 2s ease-out forwards;
+	-webkit-animation:cont47 .8s 2s ease-out forwards;
+}
+.page04 .cont48 {
+	top:36%;
+}
+.page04 .cont44 {
+	top:33.5%;
+}
+.page04 .cont45 {
+	top:42%;
+}
+.page04 .cont46 {
+	top:53%;
+}
+@keyframes cont43 {
+	from {opacity:0;top:100%;}
+	to {opacity:1;top:23%;}
+ }
+ @-webkit-keyframes cont43 {
+	from {opacity:0;top:100%;}
+	to {opacity:1;top:23%;}
+ }
+ @-moz-keyframes cont43 {
+	from {opacity:0;top:100%;}
+	to {opacity:1;top:23%;}
+ }
+ @keyframes cont47 {
+	from {transform:scale(0);}
+	to {transform:scale(1);}
+ }
+ @-webkit-keyframes cont47 {
+	from {-webkit-transform:scale(0);}
+	to {-webkit-transform:scale(1);}
+ }
+ @-moz-keyframes cont47 {
+	from {-moz-transform:scale(0);}
+	to {-moz-transform:scale(1);}
+ }
+
+ /*第五屏*/
+ .page05 .cont50 {
+ 	top:4%;
+ }
+ .page05 .cont51,.page05 .cont52 {
+	top:18%;
+}
+
+.page05 .cont53,.page05 .cont55 {
+	top:26%;
+}
+.page05 .cont54 {
+	top:49%;
+}
+.page05 .cont56 {
+	top:46%;
+}
+.page05 .cont57 {
+ 	top:70%;
+ }
+.swiper-slide-active .page05 .cont58 {
+ 	top:25%;
+ 	transform:scale(0);
+ 	animation:cont58 2.5s 1s ease-out forwards;
+ 	-webkit-animation:cont58 2.5s 1s ease-out forwards;
+ } 
+ @keyframes cont58 {
+	from {transform:scale(0);}
+	to {transform:scale(1);}
+ }
+ @-webkit-keyframes cont58 {
+	from {-webkit-transform:scale(0);}
+	to {-webkit-transform:scale(1);}
+ }
+ @-moz-keyframes cont58 {
+	from {-moz-transform:scale(0);}
+	to {-moz-transform:scale(1);}
+ }
+
+  /*第六屏*/
+  .page06 .cont60 {
+  	top:4%;
+  }
+  .page06 .cont66 {
+  	top:27%;
+  }
+  .page06 .cont61 {
+  	top:16.8%;
+  }
+  .page06 .cont62 {
+  	top:31.8%;
+  }
+
+.swiper-slide-active .page06 .cont63 {
+	top:17%;
+	transform:scale(0);
+	transform-origin:0;
+	-webkit-transform-origin:0;
+	animation:cont34 1s 2s ease-out forwards;
+	-webkit-animation:cont34 1s 2s ease-out forwards;
+}
+.swiper-slide-active .page06 .cont64 {
+	top:32%;
+	transform:scale(0);
+	transform-origin:0;
+	animation:cont35 1s 2s ease-out forwards;
+	-webkit-animation:cont35 1s 2s ease-out forwards;
+}
+
+.page06 .cont64 {
+  	top:23%;
+ }
+ .page06 .cont65 {
+  top:13%;
+ }
+ .page06 .cont67 {
+  	top:29%;
+ }
+  .page06 .cont601 {
+  	top:46%;
+ }
+ .swiper-slide-active .page06 .cont68 {
+  	top:55%;
+  	opacity:0;
+  	animation:cont68 1s 3.5s ease-out forwards;
+  	-webkit-animation:cont68 1s 3.5s ease-out forwards;
+ }
+ .swiper-slide-active .page06 .cont602 {
+  	top:59%;
+  	transform:scale(0);
+  	animation:cont602 1s 4s ease-out forwards;
+  	-webkit-animation:cont602 1s 4s ease-out forwards;
+ }
+  .page06 .cont69 {
+  	top:50%;
+ }
+ @keyframes cont68 {
+	from {transform:scale(1.5); opacity:0;}
+	to {transform:scale(1);opacity:1;}
+ }
+ @-webkit-keyframes cont68 {
+	from {-webkit-transform:scale(1.5); opacity:0;}
+	to {-webkit-transform:scale(1);opacity:1;}
+ }
+ @-moz-keyframes cont68 {
+	from {-moz-transform:scale(1.5); opacity:0;}
+	to {-moz-transform:scale(1);opacity:1;}
+ }
+ @keyframes cont602 {
+	from {transform:scale(0);}
+	to {transform:scale(1);}
+ }
+ @-webkit-keyframes cont602 {
+	from {-webkit-transform:scale(0);}
+	to {-webkit-transform:scale(1);}
+ }
+ @-moz-keyframes cont602 {
+	from {-moz-transform:scale(0);}
+	to {-moz-transform:scale(1);}
+ }
+  /*第七屏*/
+  .page07  .cont70 {
+  	top:4%;
+  }
+  .page07  .cont71 {
+  	top:14%;
+  }
+  .page07  .cont72 {
+  	top:12%;
+  }
+  .swiper-slide-active .page07  .cont73 {
+  	top:22%;
+  	opacity:0;
+  	animation:cont73 2s .8s ease-out infinite forwards;
+  	-webkit-animation:cont73 2s .8s ease-out infinite forwards;
+  }
+  .page07  .cont74 {
+  	top:18%;
+  }
+  .page07  .cont75 {
+  	top:29%;
+  }
+   .swiper-slide-active .page07  .cont76 {
+  	top:0;
+	opacity:0;
+  	animation:cont76 1s 2.5s ease-out forwards;
+  	-webkit-animation:cont76 1s 2.5s ease-out forwards;
+  }
+   .swiper-slide-active .page07  .cont77 {
+  	top:100%;
+	opacity:0;
+  	animation:cont77 1s 2.5s ease-out forwards;
+  	-webkit-animation:cont77 1s 2.5s ease-out forwards;
+  }
+  .page07  .cont78 {
+  	top:34%;
+  }
+  .page07  .cont79 {
+  	top:49%;
+  }
+   .swiper-slide-active .page07  .cont705 {
+  	top:65%;
+  	transform:scale(0);
+  	animation:cont602 1.5s 4s ease-out forwards;
+  	-webkit-animation:cont602 1.5s 4s ease-out forwards;
+  }
+  .swiper-slide-active .page07  .cont701 {
+  	top:70%;
+  	transform:scale(0);
+  	transform-origin:0;
+  	animation:cont602 1.5s 4s ease-out forwards;
+  	-webkit-animation:cont602 1.5s 4s ease-out forwards;
+  }
+
+ .page07  .cont702 {
+  	top:76%;
+  }
+  .page07  .cont703 {
+  	top:83%;
+  }
+  .swiper-slide-active .page07  .cont704 {
+  	top:81%;
+  	transform:scale(0);
+  	animation:cont602 2s 5s ease-out forwards;
+  	-webkit-animation:cont602 2s 5s ease-out forwards;
+  }
+
+
+  @keyframes cont73 {
+	from {opacity:0;}
+	to {opacity:1;}
+ }
+ @-webkit-keyframes cont73 {
+	from {opacity:0;}
+	to {opacity:1;}
+ }
+ @-moz-keyframes cont73 {
+	from {opacity:0;}
+	to {opacity:1;}
+ }
+  @keyframes cont76 {
+	from {top:0;opacity:0;}
+	to {top:38%; opacity:1;}
+ }
+ -webkit-@keyframes cont76 {
+	from {top:0;opacity:0;}
+	to {top:38%; opacity:1;}
+ }
+ -moz-@keyframes cont76 {
+	from {top:0;opacity:0;}
+	to {top:38%; opacity:1;}
+ }
+
+  @keyframes cont77 {
+	from {top:100%;opacity:0;}
+	to {top:54%; opacity:1;}
+ }
+  @webkit-keyframes cont77 {
+	from {top:100%;opacity:0;}
+	to {top:54%; opacity:1;}
+ }
+  @-moz-keyframes cont77 {
+	from {top:100%;opacity:0;}
+	to {top:54%; opacity:1;}
+ }
+   /*第八屏*/
+.page08 .cont80 {
+	top:6%;
+}
+.page08 .cont81 {
+	top:21%;
+}
+.page08 .cont82 {
+	top:32%;
+}
+.page08 .cont83 {
+	top:41%;
+}
+.swiper-slide-active .page08 .cont84 {
+	top:49.5%;
+	transform:scale(0);
+	animation:cont602 1s 1.5s ease-out forwards;
+	-webkit-animation:cont602 1s 1.5s ease-out forwards;
+}
+.page08 .cont85 {
+	top:76%;
+}
+
+.array {
+	position:absolute;
+	bottom:0;
+	/*opacity:0;*/
+	z-index:999;
+	animation:array 1s ease-out infinite forwards;
+	-webkit-animation:array 1s ease-out infinite forwards;
+}
+ @keyframes array {
+	from {bottom:0;opacity:0;}
+	to {bottom:3%; opacity:1;}
+ }
+ @-webkit-keyframes array {
+	from {bottom:0;opacity:0;}
+	to {bottom:3%; opacity:1;}
+ }
+ @-moz-keyframes array {
+	from {bottom:0;opacity:0;}
+	to {bottom:3%; opacity:1;}
+ }
+</style>
+</head>
+<body>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <section class="page1 swiper-slide">
+   		<div class="page01">
+   			<img class = "logo ani" swiper-animate-effect = "shake" swiper-animate-duration="0.2s" src="images/logo.png" alt="">
+
+			<img class = "cont01 ani" swiper-animate-effect = "rotateInDownLeft" swiper-animate-duration=".5s" swiper-animate-delay=".5s" src="images/1.png" alt="">
+			<img class = "cont02 ani" swiper-animate-effect = "lightSpeedIn" swiper-animate-duration=".5s" swiper-animate-delay=".8s" src="images/2.png" alt="">
+			<img class = "cont03 ani" swiper-animate-effect = "rotateInUpRight" swiper-animate-duration=".5s" swiper-animate-delay="1s" src="images/3.png" alt="">
+			
+			<!--待定1 <img class = "cont04" src="images/6.png" alt=""> -->
+			<img class = "cont05 ani" src="images/4.png" alt="">
+			<img class = "cont06 ani" src="images/5.png" alt="">
+			<img class = "cont07 ani" src="images/7.png" alt="">
+			<img class = "cont08 ani" src="images/8.png" alt="">
+			
+			<img class = "array" src="images/move.png" alt="">
+   		</div>
+    </section>
+    <section class="page2 swiper-slide">
+    	<div class="page02">
+			<img class = "cont20 ani" swiper-animate-effect = "flip" swiper-animate-duration=".5s" src="images/21.png" alt="">
+	    	
+			<img class = "cont23" src="images/23.png" alt="婴儿">
+			<img class = "cont27" src="images/27.png" alt="婴儿">
+			
+			<img class = "cont24 ani" swiper-animate-effect = "fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="1s" src="images/24.png" alt="">
+			<img class = "cont25 ani" swiper-animate-effect = "fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="1s" src="images/22.png" alt="">
+	    	
+	    	<img class = "cont21 ani" swiper-animate-effect = "rotateInUpRight" swiper-animate-duration="0.8s" swiper-animate-delay="2s" src="images/25.png" alt="">
+			<img class = "cont22 ani" swiper-animate-effect = "rotateInUpLeft" swiper-animate-duration="0.8s" swiper-animate-delay="2s" src="images/26.png" alt="">
+			<img class = "array" src="images/move.png" alt="">
+    	</div>
+	</section>
+    <section class="page3 swiper-slide">
+    	<div class="page03">
+			<img class = "cont30 ani" swiper-animate-effect = "flip" swiper-animate-duration=".5s" src="images/30.png" alt="">
+			<img class = "cont31 ani" swiper-animate-effect = "zoomInLeft" swiper-animate-duration="0.5s" swiper-animate-delay=".5s"  src="images/31.png" alt="">
+
+			<img class = "cont32 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="1s" src="images/32.png" alt="">
+			<img class = "cont33 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="1s" src="images/32.png" alt="">
+		
+			<img class = "cont34" src="images/33.png" alt="">
+			<img class = "cont35" src="images/35.png" alt="">
+			
+			<img class = "cont36 ani" swiper-animate-effect = "lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.6s" src="images/34.png" alt="">
+			<img class = "cont37 ani" swiper-animate-effect = "lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.6s" src="images/36.png" alt="">
+			<img src="" alt="">
+			
+			<img class = "cont38 ani" swiper-animate-effect = "fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="3s" src="images/37.png" alt="">
+			<img class = "cont39 ani" swiper-animate-effect = "fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="3s" src="images/38.png" alt="">
+
+			<img class = "cont301 ani" swiper-animate-effect = "zoomInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="3.5s" src="images/39.png" alt="">
+			<img class = "cont302 ani" swiper-animate-effect = "zoomInRight" swiper-animate-duration="0.8s" swiper-animate-delay="3.5s" src="images/301.png" alt="">
+			<img class = "array" src="images/move.png" alt="">
+    	</div>
+    </section>
+    <section class = "page4 swiper-slide">
+		<div class="page04">
+			<img class = "cont40 ani" swiper-animate-effect = "flip" swiper-animate-duration=".5s" src="images/40.png" alt="">
+			<img class = "cont42 ani" swiper-animate-effect = "zoomInLeft" swiper-animate-duration="0.5s" swiper-animate-delay=".5s"  src="images/42.png" alt="">
+			
+			<img class = "cont41 ani" swiper-animate-effect = "slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"  src="images/41.png" alt="">
+
+			<img class = "cont43" src="images/43.png" alt="">
+	    	<img class = "cont47" src="images/47.png" alt="">
+
+	    	<img class = "cont48 ani" swiper-animate-effect = "slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="2.7s"  src="images/48.png" alt="">
+			<img class = "cont46 ani" swiper-animate-effect = "rotateInUpLeft" swiper-animate-duration="0.5s" swiper-animate-delay="3s"  src="images/46.png" alt="">
+			<img class = "cont45 ani" swiper-animate-effect = "rotateInUpRight" swiper-animate-duration="2s" swiper-animate-delay="3.2s"  src="images/45.png" alt="">
+			<img class = "cont44 ani" swiper-animate-effect = "slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s"  src="images/44.png" alt="">
+			<img class = "array" src="images/move.png" alt="">
+		</div>
+    </section>
+    <section class = "page5 swiper-slide">
+		<div class="page05">
+			<img class = "cont50 ani" swiper-animate-effect = "flip" swiper-animate-duration=".5s" src="images/50.png" alt="">
+			<img class = "cont51 ani" swiper-animate-effect = "zoomInLeft" swiper-animate-duration=".5s" swiper-animate-delay=".5s" src="images/51.png" alt="">
+			<img class = "cont52 ani" swiper-animate-effect = "zoomInRight" swiper-animate-duration=".5s" swiper-animate-delay=".5s" src="images/52.png" alt="">
+			
+			<img class = "cont53 ani" swiper-animate-effect = "bounceInRight" swiper-animate-duration=".8s" swiper-animate-delay="1s" src="images/53.png" alt="">
+			<img class = "cont55 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1s" src="images/55.png" alt="">
+
+			<img class = "cont54 ani" swiper-animate-effect = "rotateInDownLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" src="images/54.png" alt="">
+			<img class = "cont56 ani" swiper-animate-effect = "rotateInDownRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" src="images/56.png" alt="">
+
+			<img class = "cont57 ani" swiper-animate-effect = "rollIn" swiper-animate-duration="1.2s" swiper-animate-delay="1.3s" src="images/57.png" alt="">
+
+			<img class = "cont58" src="images/58.png" alt="">
+			<img class = "array" src="images/move.png" alt="">
+		</div>
+		
+    </section>
+    <section class = "page6 swiper-slide">
+		<div class="page06">
+			<img class = "cont60 ani" swiper-animate-effect = "flip" swiper-animate-duration=".5s" src="images/60.png" alt="">
+			<img class = "cont66 ani" swiper-animate-effect = "rotateInDownLeft" swiper-animate-duration=".5s" swiper-animate-delay=".5s" src="images/66.png" alt="">
+			
+			<img class = "cont61 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="1s" src="images/602.png" alt="">
+			<img class = "cont62 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="1s" src="images/602.png" alt="">
+
+			<img class = "cont63" src="images/61.png" alt="">
+			<img class = "cont64" src="images/64.png" alt="">
+			
+			<img class = "cont65 ani" swiper-animate-effect = "lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.5s" src="images/63.png" alt="">
+			<img class = "cont67 ani" swiper-animate-effect = "lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.5s" src="images/65.png" alt="">
+			
+			<img class = "cont601 ani" swiper-animate-effect = "rotateInDownLeft" swiper-animate-duration="0.8s" swiper-animate-delay="3.8s" src="images/601.png" alt="">
+
+			<img class = "cont68" src="images/67.png" alt="">
+			<img class = "cont602" src="images/68.png" alt="">
+			<img class = "cont69 ani" swiper-animate-effect = "rotateInUpRight" swiper-animate-duration="0.8s" swiper-animate-delay="3.8s" src="images/69.png" alt="">
+			<img class = "array" src="images/move.png" alt="">
+		</div>
+    </section>
+    <section class = "page7 swiper-slide">
+    	<div class="page07">
+    		<img class = "cont70 ani" swiper-animate-effect = "flip" swiper-animate-duration=".5s" src="images/70.png" alt="">
+    		<img class = "cont71 ani" swiper-animate-effect = "rotateInUpRight" swiper-animate-duration=".5s" swiper-animate-delay=".5s" src="images/71.png" alt="">
+    		<img class = "cont73" src="images/73.png" alt="">
+    		<img class = "cont72 ani" swiper-animate-effect = "slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1s" src="images/72.png" alt="">
+
+    		<img class = "cont74 ani" swiper-animate-effect = "rotateInUpLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" src="images/74.png" alt="">
+    		<img class = "cont75 ani" swiper-animate-effect = "rotateInUpRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" src="images/75.png" alt="">
+
+    		<img class = "cont76" src="images/76.png" alt="">
+    		<img class = "cont77" src="images/77.png" alt="">
+
+    		<img class = "cont78 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="3s" src="images/78.png" alt="">
+    		<img class = "cont79 ani" swiper-animate-effect = "lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="3s" src="images/79.png" alt="">
+
+    		<img class = "cont705" src="images/705.png" alt="">
+    		<img class = "cont701" src="images/701.png" alt="">
+
+    		<img class = "cont702 ani" swiper-animate-effect = "rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="5s" src="images/702.png" alt="">
+    		<img class = "cont703 ani" swiper-animate-effect = "rotateInUpRight" swiper-animate-duration="1s" swiper-animate-delay="5s" src="images/703.png" alt="">
+    		<img class = "cont704" src="images/704.png" alt="">
+    		<img class = "array" src="images/move.png" alt="">
+    	</div>
+    </section>
+    <section class = "page8 swiper-slide">
+    	<div class="page08">
+    		<img class = "cont80 ani" swiper-animate-effect = "rollIn" swiper-animate-duration=".5s" src="images/80.png" alt="">
+    		<img class = "cont81 ani" swiper-animate-effect = "zoomInLeft" swiper-animate-duration=".8s" swiper-animate-delay=".5s" src="images/81.png" alt="">
+    		<img class = "cont82 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s" src="images/82.png" alt="">
+    		<img class = "cont83 ani" swiper-animate-effect = "bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s" src="images/83.png" alt="">
+
+    		<img class = "cont84" src="images/84.png" alt="">
+
+    		<img class = "cont85 ani" swiper-animate-effect = "bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s" src="images/85.png" alt="">
+    		<!-- <img src="images/mark.png" alt=""> -->
+    	</div>
+    </section>
+    <img id = "array" src="images/move.png" alt="">
+  </div>
+</div>
+<script type="text/javascript">
+
+  // function fixPatgesHeight() {
+  // 	var _height = document.documentElement.clientHeight;
+  // 	$(".swiper-container").height(_height);
+  // } 
+
+  var mySwiper = new Swiper(".swiper-container",{
+		direction:"vertical",
+		mousewheelControl : true,
+		pagination:"swiper-pagination",
+		onInit:function(swiper) {
+			swiperAnimateCache(swiper);
+			swiperAnimate(swiper);
+			// fixPatgesHeight();
+		},
+		onSlideChangeEnd: function (swiper) {
+			swiperAnimate(swiper);
+		}
+	})
+</script>
+</body>
+</html>

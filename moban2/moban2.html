@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name = "viewport" content = "width = device-width,user-scalable = no,initial-scale = 1.0">
+	<meta name = "decription" content = "yes">
+	<meta name = "apple-touch-fullscreen" content = "yes">
+	<meta name = "apple-mobile-web-app-capable" contentt = "yes">
+	
+	<link rel="stylesheet" href="css/normal.css">
+	<link rel="stylesheet" href="css/swiper.3.1.2.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src = "js/swiper.animate1.0.2.min.js"></script>
+	<script src = "js/jquery-1.10.1.min.js"></script>
+	<script src = "js/swiper.3.1.2.jquery.min.js"></script>
+	<script src = "js/preload.js"></script>
+	
+	<script src = "js/mobile.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+		html,body {
+			max-width:640px;
+			height:100%;
+		}
+		body {
+			font-size:"microsoft yahei";
+		}
+		img {
+			position:absolute;
+			width:100%;
+		}
+		.swiper-container,.swiper-wrapper,.swiper-slide{
+			width:100%;
+			height:100%;
+		}
+		.logo {
+			margin-top:2%;
+		}
+		.cont {
+			position:absolute;
+			width:100%;
+			height:100%;
+			color:#f7f9fb;
+		}
+		.cont h3{
+			position:absolute;
+			text-align:right;
+			top:4%;
+			right:4%;
+			width:50%;
+			font-size:50em;
+			
+		}
+		.cont p{
+			position:absolute;
+			right:4%;
+			top:10%;
+			width:70%;
+			font-size:20em;
+			line-height:1.5em;
+			
+		}
+
+		.swiper-slide-active .move {
+			top:88%;
+			animation:move1 2s ease-out infinite forwards;
+			-webkit-animation:move1 2s ease-out infinite forwards;
+			-moz-animation:move1 2s ease-out infinite forwards;
+		}
+
+		@keyframes move1 {
+			from {top:88%;opacity:1;}
+			to {top:80%;opacity:0;}
+		}
+		@-webkit-keyframes move1 {
+			from {top:88%;opacity:1;}
+			to {top:80%;opacity:0;}
+		}
+		@-moz-keyframes move1 {
+			from {top:88%;opacity:1;}
+			to {top:80%;opacity:0;}
+		}
+
+		/*第一屏*/
+		.p1 {
+			top:10%;
+		}
+		.p2 {
+			top:33%;
+		}
+		/*特殊的第六瓶*/
+		. {
+			background:#1a2024;
+		}
+		 .circle {
+			transition:3s;
+			-webkit-transition:3s;
+			-moz-transition:3s;
+			top:33%;
+		}
+		 .light {
+			opacity:0;
+			top:34%;
+			transition:3s;
+			-webkit-transition:3s;
+			-moz-transition:3s;
+		}
+		 #show {
+			position:absolute;
+			top:40%;
+			width:25%;
+			height:16%;
+			left:45%;
+		}
+		 .cont6 {
+			position:absolute;
+			width:100%;
+			text-align:center;
+			padding:0 5%;
+			color:#767b81;
+			font-size:32em;
+			opacity:0;
+		}
+		
+		 .show1 {
+			opacity:1;
+		}
+		 .hide1 {
+			opacity:0;
+		}
+		
+		/*最后一屏*/
+		.pagelast .cont81 {
+			top:10%;
+		}
+		
+		.pagelast #relay {
+			position:absolute;
+			top:32%;
+			width:100%;
+			height:7%;
+		}
+		
+		.pagelast #share {
+			position:absolute;
+			top:41%;
+			width:100%;
+			height:7%;
+		}
+		.pagelast #mark {
+			display:none;
+		}
+		.swiper-slide-active .cont84 {
+			top:49.5%;
+			transform:scale(0);
+			-webkit-transform:scale(0);
+			-moz-transform:scale(0);
+			animation:cont1 2s ease-out 2s forwards;
+			-webkit-animation:cont1 2s ease-out 2s forwards;
+			-moz-animation:cont1 2s ease-out 2s forwards;
+
+		}
+
+		.pagelast .cont85 {
+			top:75%;
+		}
+		.pagelast .other {
+			width:100%;
+			position:absolute;
+			top:88%;
+			text-align:center;
+			color:#d8dcdf;
+			font-size:24em;
+		}
+
+		 @keyframes cont1 {
+			from {transform:scale(0);}
+			to {transform:scale(1);}
+		 }
+		  @-webkit-keyframes cont1 {
+			from {transform:scale(0);}
+			to {transform:scale(1);}
+		 }
+		  @-moz-keyframes cont1 {
+			from {transform:scale(0);}
+			to {transform:scale(1);}
+		 }
+
+		/*动画*/
+		.swiper-slide-active .moveUp {
+			animation:moveup 1.5s ease-out 1s forwards;
+			-webkit-animation:moveup 1.5s ease-out 1s forwards;
+			-moz-animation:moveup 1.5s ease-out 1s forwards;
+		}
+		@keyframes moveup {
+			from {opacity:0;top:100%;}
+			to {opacity:1; top:80%;}
+		}
+		@-webkit-keyframes moveup {
+			from {opacity:0;top:100%;}
+			to {opacity:1; top:80%;}
+		}
+		@-moz-keyframes moveup {
+			from {opacity:0;top:100%;}
+			to {opacity:1; top:80%;}
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="loading">
+		<div class="pace">
+			<div class="pace-progress">0</div>
+		</div>
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+		</div>
+	</div>
+	<script src = "js/data.js"></script>
+</body>
+</html>
