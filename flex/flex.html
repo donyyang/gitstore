@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="stylesheets/flex.css">
+	<meta name = "viewport" content = "width= device-width,user-scalable = no,initial-scale = 1">	
+	<script src = "js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<img class = "logo" src="img/head.jpg" alt="">
+		<nav>
+			<ul class = "navs">
+				<li><a href="">首页</a></li>
+				<li><a href="">视频列表</a></li>
+				<li><a href="">图片列表</a></li>
+			</ul>
+		</nav>
+		<div class="list">
+			<div class="cont">
+				<a href=""><img src="img/lb.jpg" alt=""></a>
+				<!-- <a href=""><img src="img/" alt=""></a>
+				<a href=""><img src="img/" alt=""></a>
+				<a href=""><img src="img/" alt=""></a> -->
+			</div>
+			<div class="spots">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="c-head">
+			<img class = "video" src="img/1.png" alt="">
+			<a class = "more" href="">更多</a>
+		</div>
+
+		<div class="c-cont">
+			<div class="videos">
+				<section>
+					<img src="img/li.jpg" alt="">
+					<p>一段忧伤的旅程</p>
+					<p>在路上</p>
+					<p>票数：<span>844</span> <a href="">投票</a></p>
+				</section>
+				<section>
+					<img src="img/li.jpg" alt="">
+					<p>一段忧伤的旅程</p>
+					<p>在路上</p>
+					<p>票数：<span>844</span> <a href="">投票</a></p>
+				</section>
+			</div>
+			<div class="videos">
+				<section>
+					<img src="img/li.jpg" alt="">
+					<p>一段忧伤的旅程</p>
+					<p>在路上</p>
+					<p>票数：<span>844</span> <a href="">投票</a></p>
+				</section>
+				<section>
+					<img src="img/li.jpg" alt="">
+					<p>一段忧伤的旅程</p>
+					<p>在路上</p>
+					<p>票数：<span>844</span> <a href="">投票</a></p>
+				</section>
+			</div>
+			<div class="videos">
+				<section>
+					<img src="img/li.jpg" alt="">
+					<p>一段忧伤的旅程</p>
+					<p>在路上</p>
+					<p>票数：<span>844</span> <a href="">投票</a></p>
+				</section>
+				<section>
+					<img src="img/li.jpg" alt="">
+					<p>一段忧伤的旅程</p>
+					<p>在路上</p>
+					<p>票数：<span>844</span> <a href="">投票</a></p>
+				</section>
+			</div>
+		</div>
+		<img src="img/3.png" alt="">
+		<div class="c-pingwei">
+			<div class = "pingwei">
+				<img src="img/1.jpg" alt="">
+				<h3>欧阳彭杰</h3>
+				<p>北京朝阳区</p>
+				<p>北京朝阳区</p>
+			</div>
+			<div class = "pingwei">
+				<img src="img/1.jpg" alt="">
+				<h3>欧阳彭杰</h3>
+				<p>北京朝阳区</p>
+				<p>北京朝阳区</p>
+			</div>
+			<div class = "pingwei">
+				<img src="img/1.jpg" alt="">
+				<h3>欧阳彭杰</h3>
+				<p>北京朝阳区</p>
+				<p>北京朝阳区</p>
+			</div>
+			<div class = "pingwei">
+				<img src="img/1.jpg" alt="">
+				<h3>欧阳彭杰</h3>
+				<p>北京朝阳区</p>
+				<p>北京朝阳区</p>
+			</div>
+
+		</div>
+		<img src="img/3.png" alt="">
+		<div class="c-jiangpin">
+			<div class="jiangpins">
+				<img src="img/2.jpg" alt="">
+				<h3>一等奖（3名）</h3>
+				<p>小米电视</p>
+			</div>
+			<div class="jiangpins">
+				<img src="img/2.jpg" alt="">
+				<h3>一等奖（3名）</h3>
+				<p>小米电视</p>
+			</div>
+			<div class="jiangpins">
+				<img src="img/2.jpg" alt="">
+				<h3>一等奖（3名）</h3>
+				<p>小米电视</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="f-top">
+			<div class="t-left">
+				<div class="l-top">
+					<p>联合主办：</p>
+					<ul>
+						<li>搜狐网</li>
+						<li>大疆创新</li>
+					</ul>
+				</div>
+				<div class="l-bot">
+					<p>赞助合作：</p>
+					<ul>
+						<li>搜狐网</li>
+						<li>大疆创新</li>
+						<li>搜狐网</li>
+						<li>大疆创新</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="t-right">
+				<p>版权声明：</p>
+				<p>本网登载图片用于摄影大赛之目，版权归本网所有。但并不代表本网赞同其观点，谢绝转载。如该图片涉及任何第三方合法权利，请及时与hangpaisheying@sohu.com联系。</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+	var sizeRatio = $(window).width()/ 640;
+	var size = sizeRatio > 1 ? 1 : sizeRatio;
+	$("body").css("font-size",size * 6.25+"%");
+
+	</script>
+</body>
+</html>

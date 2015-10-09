@@ -1,0 +1,153 @@
+/* line 4, ../sass/flex.scss */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* line 6, ../sass/flex.scss */
+html, body {
+  max-width: 640px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 15, ../sass/flex.scss */
+img {
+  width: 100%;
+}
+
+/* line 18, ../sass/flex.scss */
+header, nav, .content {
+  width: 100%;
+}
+
+/* line 23, ../sass/flex.scss */
+header .logo {
+  width: 100%;
+}
+/* line 27, ../sass/flex.scss */
+header .navs {
+  display: flex;
+  font-size: 26em;
+}
+/* line 30, ../sass/flex.scss */
+header .navs li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+}
+/* line 34, ../sass/flex.scss */
+header .navs li a {
+  flex: 1;
+  color: #ccc;
+}
+
+/* line 43, ../sass/flex.scss */
+.content .c-head {
+  position: relative;
+}
+/* line 45, ../sass/flex.scss */
+.content .c-head .more {
+  position: absolute;
+  top: 28%;
+  right: 3%;
+}
+/* line 52, ../sass/flex.scss */
+.content .c-cont {
+  width: 100%;
+}
+/* line 54, ../sass/flex.scss */
+.content .c-cont .videos {
+  display: flex;
+}
+/* line 56, ../sass/flex.scss */
+.content .c-cont .videos section {
+  border: 1px solid red;
+  margin: 3%;
+}
+/* line 59, ../sass/flex.scss */
+.content .c-cont .videos section p {
+  padding: 2% 0 2% 5%;
+}
+/* line 62, ../sass/flex.scss */
+.content .c-cont .videos section p:nth-child(4) {
+  display: flex;
+}
+/* line 64, ../sass/flex.scss */
+.content .c-cont .videos section p:nth-child(4) span {
+  flex: 0 0 50%;
+}
+/* line 67, ../sass/flex.scss */
+.content .c-cont .videos section p:nth-child(4) a {
+  padding: 2% 3%;
+  margin-top: -2%;
+  background: #309add;
+  -moz-border-radius: 15%;
+  -webkit-border-radius: 15%;
+  border-radius: 15%;
+}
+/* line 75, ../sass/flex.scss */
+.content .c-cont .videos section:nth-child(2) {
+  margin-left: 0;
+}
+/* line 81, ../sass/flex.scss */
+.content .c-pingwei {
+  display: flex;
+  margin: 0 3%;
+}
+/* line 84, ../sass/flex.scss */
+.content .c-pingwei .pingwei {
+  margin-left: 3%;
+}
+/* line 87, ../sass/flex.scss */
+.content .c-pingwei .pingwei:nth-child(1) {
+  margin: 0;
+}
+/* line 92, ../sass/flex.scss */
+.content .c-jiangpin {
+  display: flex;
+  margin: 0 3%;
+}
+/* line 95, ../sass/flex.scss */
+.content .c-jiangpin .jiangpins {
+  margin: 2%;
+}
+/* line 97, ../sass/flex.scss */
+.content .c-jiangpin .jiangpins p {
+  margin: 5% 0;
+}
+
+/* line 106, ../sass/flex.scss */
+footer .f-top {
+  margin: 3%;
+  display: flex;
+}
+/* line 109, ../sass/flex.scss */
+footer .f-top .t-left {
+  border: 1px solid red;
+  flex: 0 0 50%;
+}
+/* line 112, ../sass/flex.scss */
+footer .f-top .t-left .l-top, footer .f-top .t-left .l-bot {
+  display: flex;
+  justify-content: center;
+}
+/* line 115, ../sass/flex.scss */
+footer .f-top .t-left .l-top p, footer .f-top .t-left .l-top li, footer .f-top .t-left .l-bot p, footer .f-top .t-left .l-bot li {
+  line-height: 2em;
+}
+/* line 119, ../sass/flex.scss */
+footer .f-top .t-left .l-top {
+  margin-bottom: 10%;
+}
+/* line 123, ../sass/flex.scss */
+footer .f-top .t-right {
+  margin-left: 3%;
+}
+/* line 125, ../sass/flex.scss */
+footer .f-top .t-right p, footer .f-top .t-right li {
+  line-height: 2em;
+}

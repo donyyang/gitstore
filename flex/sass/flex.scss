@@ -1,0 +1,130 @@
+@import "compass/css3";
+
+
+*{margin:0;padding:0;list-style:none;text-decoration:none;}
+
+html,body {
+	max-width:640px;
+	margin:0 auto;
+	height:100%;
+	width:100%;
+}
+// html {
+// 	font-size:62.5%;
+// }
+img {
+	width:100%;
+}
+header,nav,.content {
+	width:100%;
+}
+
+header {
+	.logo {
+		width:100%;
+	}
+
+	.navs {
+		display:flex;
+		font-size:26em;
+		li{
+			flex:1;
+			text-align:center;
+			display:flex;
+			a {
+				flex:1;
+				color:#ccc;
+			}
+		}
+	}
+}
+
+.content {
+	.c-head {
+		position:relative;
+		.more {
+			position:absolute;
+			top:28%;
+			right:3%;
+		}
+	}
+
+	.c-cont {
+		width:100%;
+		.videos {
+			display:flex;
+			section {
+				border:1px solid red;
+				margin:3%;
+				p {
+					padding:2% 0 2% 5%;
+				}
+				p:nth-child(4) {
+					display:flex;
+					span {
+						flex:0 0 50%;
+					}
+					a {
+						padding:2% 3%;
+						margin-top:-2%;
+						background:#309add;
+						@include border-radius(15%);
+					}
+				}
+			}
+			section:nth-child(2) {
+				margin-left:0;
+			}
+		}
+	}
+
+	.c-pingwei {
+		display:flex;
+		margin:0 3%;
+		.pingwei {
+			margin-left:3%;
+		}
+		.pingwei:nth-child(1) {
+			margin:0
+		}
+	}
+
+	.c-jiangpin {
+		display:flex;
+		margin:0 3%;
+		.jiangpins {
+			margin:2%;
+			p {
+				margin:5% 0;
+			}
+		}
+	}
+	
+}
+
+footer {
+	.f-top {
+		margin:3%;
+		display:flex;
+		.t-left {
+			border:1px solid red;
+			flex:0 0 50%;
+			.l-top,.l-bot {
+				display:flex;
+				justify-content:center;
+				p,li {
+					line-height:2em;
+				}
+			}
+			.l-top {
+				margin-bottom:10%;
+			}
+		}
+		.t-right {
+			margin-left:3%;
+			p,li {
+				line-height:2em;
+			}
+		}
+	}
+}
